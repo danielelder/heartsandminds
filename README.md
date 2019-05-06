@@ -1,2 +1,2 @@
 # heartsandminds
-Hearts and Minds component library
+Hearts and Minds pattern library

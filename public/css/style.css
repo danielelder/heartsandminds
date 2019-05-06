@@ -1,0 +1,28 @@
+/* 
+Colours:
+Red: DA3832
+
+Borders:
+normal: 6px;
+larger: 20px;
+
+*/
+
+
+
+/* Base */
+
+
+
+/* Buttons */
+.a-button {
+    background: #DA3832;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    padding: 20px;
+}
+
+.a-button--lg {
+    border-radius: 20px;
+}

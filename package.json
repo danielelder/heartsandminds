@@ -1,0 +1,31 @@
+{
+  "name": "heartsandminds",
+  "version": "1.0.0",
+  "description": "Hearts and Minds component library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pl:build": "patternlab build --config ./patternlab-config.json",
+    "pl:help": "patternlab --help",
+    "pl:install": "patternlab install --config ./patternlab-config.json",
+    "pl:serve": "patternlab serve --config ./patternlab-config.json",
+    "pl:version": "patternlab --version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielelder/heartsandminds.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielelder/heartsandminds/issues"
+  },
+  "homepage": "https://github.com/danielelder/heartsandminds#readme",
+  "dependencies": {
+    "@pattern-lab/cli": "^0.0.3-alpha.0",
+    "@pattern-lab/core": "^3.0.1-alpha.0",
+    "@pattern-lab/engine-mustache": "^2.0.1-alpha.0",
+    "@pattern-lab/uikit-workshop": "^1.0.1-alpha.0"
+  }
+}
