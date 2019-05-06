@@ -37,7 +37,6 @@ html {
 }
 
 /* Typography */
-
 a {
     color: #DA3832;
     text-decoration: underline;
@@ -72,7 +71,6 @@ h1, h2, .heading {
     }
 
 /* Utilities */
-
 .align_center {
     text-align: center;
 }
