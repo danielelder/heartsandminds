@@ -1,6 +1,7 @@
 /* 
 Colours:
 Red: DA3832
+Text Grey: 575757
 
 Borders:
 normal: 6px;
@@ -9,7 +10,10 @@ larger: 20px;
 
 /* Base */
 html {
+    color: #575757;
     font-family: 'Open Sans', sans-serif;
+    font-size: 112.5%;
+    line-height: 150%;
     margin: 0;
 }
 
@@ -20,6 +24,7 @@ html {
     border-radius: 6px;
     color: #fff;
     padding: 20px;
+    text-decoration: none;
 }
 
 .a-button:hover {
@@ -29,4 +34,49 @@ html {
 
 .a-button--lg {
     border-radius: 20px;
+}
+
+/* Typography */
+
+a {
+    color: #DA3832;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1, h2, .heading {
+    font-size: 2.222rem;
+    font-weight: bold;
+}
+
+.h1_blog {
+    color: #fff;
+    font-size: 1.667rem;
+    font-weight: bold;
+}
+
+.h2_blog {
+    font-size: 1.222rem;
+    font-weight: bold;
+}
+
+.h3_blog {
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.389rem;
+    }
+
+/* Utilities */
+
+.align_center {
+    text-align: center;
+}
+
+.align_left {
+    text-align: left;
 }
