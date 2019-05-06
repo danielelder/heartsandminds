@@ -22,6 +22,11 @@ html {
     padding: 20px;
 }
 
+.a-button:hover {
+    background:darkred;
+    text-decoration: underline;     
+}
+
 .a-button--lg {
     border-radius: 20px;
 }
