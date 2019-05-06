@@ -1,3 +1,4 @@
-node_modules
-public
-pattern_exports
+/node_modules
+/public
+/pattern_exports
+.DS_Store
