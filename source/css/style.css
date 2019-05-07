@@ -19,28 +19,54 @@ html {
 
 body {
     font-size: 1rem;
+    margin: 0 20px;
+}
+
+a:focus, 
+button:focus {
+    outline: 3px dashed #DA3832;
+    text-decoration: none;
+}
+
+a:focus:hover, 
+button:focus:hover {
+    border: none;
+}
+
+.a-icon {
+    width: 0.8em;
+    align-self: center;
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 3px;
 }
 
 /* Buttons */
-.a-button {
+.m-button {
+    align-self: center;
     background: #DA3832;
     border: none;
     border-radius: 6px;
     color: #fff;
+    cursor: pointer;
     display: inline-block;
     font-size: 1rem;
     margin: 0;
-    padding: 20px;
+    padding: 10px 15px;
     text-decoration: none;
 }
 
-.a-button:hover {
+.m-button:hover {
     background:darkred;
     text-decoration: underline;     
 }
 
-.a-button--lg {
-    border-radius: 20px;
+.m-button:focus {
+    outline-color: #575757;     
+}
+
+.m-button--lg {
+    border-radius: 12px;
 }
 
 /* Typography */
@@ -90,4 +116,50 @@ h2 {
 
 .align_left {
     text-align: left;
+}
+
+
+
+
+/* Header */
+.o-header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 1em 0;
+}
+
+.m-logo-link {
+    align-self: center;
+    max-width: 300px;
+    margin-right: auto;
+    padding: 4px;
+}
+
+.a-logo {
+    max-width: 100%;
+}
+
+.m-navigation {
+    align-self: center;
+}
+.m-navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+.m-navigation__list-item {
+    padding: 2px 20px;
+}
+
+.a-menu-link {
+    color: #575757;
+    padding: 8px 4px;
+    text-decoration: none;
+}
+.a-menu-link:hover {
+    border-bottom: 4px solid #DA3832;
 }

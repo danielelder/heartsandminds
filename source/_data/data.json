@@ -1,3 +1,5 @@
 {
-    "buttonText" : "Button"
+    "buttonText" : "Button",
+    "menuText" : "Menu Link",
+    "MenuURL" : "#"
 }

@@ -1,6 +1,9 @@
-<ul>
-    <li>{{> atoms-menu-link }}</li>
-    <li>{{> atoms-menu-link }}</li>
-    <li>{{> atoms-menu-link }}</li>
-    <li>{{> atoms-menu-link }}</li>
-</ul>
+<nav class="m-navigation">
+    <ul class="m-navigation__list">
+        <li class="m-navigation__list-item">{{> atoms-menu-link(menuText:"Who we help") }}</li>
+        <li class="m-navigation__list-item">{{> atoms-menu-link(menuText:"How we help") }}</li>
+        <li class="m-navigation__list-item">{{> atoms-menu-link(menuText:"About us") }}</li>
+        <li class="m-navigation__list-item">{{> atoms-menu-link(menuText:"News") }}</li>
+        <li class="m-navigation__list-item">{{> atoms-menu-link(menuText:"Get invloved") }}</li>
+    </ul>
+</nav>
