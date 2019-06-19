@@ -102,8 +102,8 @@ npm run pl:serve
 
 ### Build and Test
 
-| Command              | Description |
-|----------------------| ----------- |
-| `npm run pl:serve`   | Builds the Pattern Lab site and watches for changes |
-| `npm run pl:help`    | Displays the Pattern Lab help |
-| `npm run pl:version` | Displays the installed version of Pattern Lab |
+| Command              | Description                                         |
+|----------------------|-----------------------------------------------------|
+| `npm run serve`      | Builds the Pattern Lab site and watches for changes |
+| `npm run pl:help`    | Displays the Pattern Lab help                       |
+| `npm run pl:version` | Displays the installed version of Pattern Lab       |

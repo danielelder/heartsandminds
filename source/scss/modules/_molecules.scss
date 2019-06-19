@@ -1,0 +1,43 @@
+// Buttons
+.m-button {
+    align-self: center;
+    background: #DA3832;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.m-button:hover {
+    background:darkred;
+    text-decoration: underline;     
+}
+
+.m-button:focus {
+    outline-color: #575757;
+    outline-offset: 3px;   
+}
+
+.m-button--lg {
+    border-radius: 12px;
+}
+
+// Navigation
+.m-navigation {
+    align-self: center;
+}
+.m-navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+.m-navigation__list-item {
+    padding: 2px 20px;
+}
