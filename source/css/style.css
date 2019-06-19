@@ -62,7 +62,8 @@ button:focus:hover {
 }
 
 .m-button:focus {
-    outline-color: #575757;     
+    outline-color: #575757;
+    outline-offset: 3px;   
 }
 
 .m-button--lg {

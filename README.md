@@ -12,8 +12,6 @@ Find out more about [Pattern Lab](https://patternlab.io/).
 
 The Atomic Design methodology considers all the details that go into creating and maintaining robust user interfaces whilst providing a coherent way of explaining itself using chemistry.
 
-Read more about [Atomic Design by Brad Frost](http://atomicdesign.bradfrost.com/).
-
 ### Naming conventions
 
 | Property  | Description |
@@ -22,6 +20,8 @@ Read more about [Atomic Design by Brad Frost](http://atomicdesign.bradfrost.com/
 | Molecules | Molecules are our building blocks or ‘atoms’ that we are piecing together to form a functional element. | 
 | Organisms | Organisms are slightly more complex and form bigger chunks of our product. We can think of these organisms in our user interface as groups of molecules. |
 | Utilities | Utilities allow the default style or behaviour of atoms, molecules or organisms to be modified using and defined set of rules. |
+
+Read more about [Atomic Design by Brad Frost](http://atomicdesign.bradfrost.com/).
 
 ## CSS Architecture
 
@@ -69,19 +69,19 @@ Example classes using ABEM (Atomic Design and BEM):
 
 The folder structure is based on BEM architecture. Styles are split into four folders comprising of Abstract, Base, Modules, and Utilities.
 
-| Folder    | Purpose |
-|-----------|---------|
-| Abstract  | mixins, variables (font, colors definitions, etc.) |
+| Folder    | Purpose                                                   |
+|-----------|-----------------------------------------------------------|
+| Abstract  | mixins, variables (font, colors definitions, etc.)        |
 | Base      | Resets and general selector styles (body, h1, p, a, etc.) |
-| Modules   | Atoms, molecules and organisms |
-| Utilities | Helpers and overrides (shame file) |
+| Modules   | Atoms, molecules and organisms                            |
+| Utilities | Helpers and overrides (shame file)                        |
 
 ## Browser support
 
 Hearts and Minds User Interface currently supports the following browsers:
 
 | Operating system | Browser                                |
-|----------------- |----------------------------------------|-------------|
+|----------------- |----------------------------------------|
 | Windows          | Edge (latest 2 versions)               |
 | Windows          | Google Chrome (latest 2 versions)      |
 | Windows          | Mozilla Firefox (latest 2 versions)    |
