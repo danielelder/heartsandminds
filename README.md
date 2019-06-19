@@ -48,19 +48,20 @@ Learn more about [BEM](http://getbem.com/).
 | Atoms     | a-           |
 | Molecules | m-           | 
 | Organisms | o-           |
+| Templates | t-           |
 | Utilities | u-           |
 
 Example classes using ABEM (Atomic Design and BEM):
 
 ```
-.o-block {}
-.o-block--modifier {}
+.a-block__element {}
+.a-block__element--modifier {}
 
 .m-block__element {}
 .m-block__element--modifier {}
 
-.a-block__element {}
-.a-block__element--modifier {}
+.o-block {}
+.o-block--modifier {}
 
 .u-align-center {}
 ```
