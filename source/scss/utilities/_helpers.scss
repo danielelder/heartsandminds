@@ -24,7 +24,7 @@
 }
 
 .u-h1-blog {
-    color: #fff;
+    color: $color-tertiary;
     font-size: 1.667rem;
     font-weight: bold;
 }
@@ -45,4 +45,25 @@
 
 .u-align-left {
     text-align: left;
+}
+
+// Underline
+.u-underline {
+    padding: 0 0 25px;
+    position: relative;
+
+    &:after {
+        border-bottom: 5px solid $color-primary;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 5px;
+        width: 50px;
+    }
+
+    &.u-align-center:after {
+        right: 0;
+        margin: 0 auto;
+    }
 }

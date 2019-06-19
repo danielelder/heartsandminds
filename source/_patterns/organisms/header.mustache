@@ -1,5 +1,7 @@
 <header class="o-header" role="banner">
-    {{> molecules-logo-link }}
-    {{> molecules-navigation }}
-    {{> atoms-button:a-button--lg(buttonText:"Donate now") }}
+    <div class="o-header__content">
+        {{> molecules-logo-link }}
+        {{> molecules-navigation }}
+        {{> molecules-button(buttonText:"Donate now") }}
+    </div>
 </header>

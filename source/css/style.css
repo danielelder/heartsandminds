@@ -26,6 +26,7 @@ footer,
 nav,
 section,
 figure {
+  line-height: 150%;
   margin: 0;
   padding: 0; }
 
@@ -39,12 +40,28 @@ hgroup,
 figure {
   display: block; }
 
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
 html {
   color: #575757;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 112.5%;
-  line-height: 150%;
-  margin: 30px; }
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 100%; }
 
 body {
   font-size: 1rem; }
@@ -56,16 +73,30 @@ a {
 a:hover {
   text-decoration: none; }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 1em 0; }
+a:focus, button:focus {
+  outline: 3px dashed #da3832;
+  outline-offset: 2px; }
 
 h1 {
-  font-size: 2.222rem;
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 3.125rem;
   font-weight: bold; }
 
 h2 {
-  font-size: 1.667rem;
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 2.5rem;
   font-weight: bold; }
+
+h3 {
+  color: #da3832;
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 1.875rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0; }
+
+ul, ol {
+  padding: 0 0 0 20px; }
 
 .a-icon {
   width: 0.8em;
@@ -73,6 +104,10 @@ h2 {
   color: #ffffff;
   display: inline-block;
   margin-right: 3px; }
+
+.a-image img {
+  max-width: 100%;
+  width: 100%; }
 
 .a-logo {
   max-width: 100%; }
@@ -90,7 +125,7 @@ h2 {
   background: #DA3832;
   border: none;
   border-radius: 6px;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-size: 1rem;
@@ -107,10 +142,16 @@ h2 {
   outline-offset: 3px; }
 
 .m-button--lg {
-  border-radius: 12px; }
+  border-radius: 12px;
+  padding: 16px 20px 16px 15px;
+  font-size: 1.2rem; }
+
+.m-logo-link:focus {
+  outline-offset: 6px; }
 
 .m-navigation {
-  align-self: center; }
+  align-self: center;
+  margin-left: auto; }
 
 .m-navigation__list {
   display: flex;
@@ -122,12 +163,84 @@ h2 {
 .m-navigation__list-item {
   padding: 2px 20px; }
 
+.m-navigation--footer {
+  background: #282828; }
+  .m-navigation--footer .m-navigation__list {
+    justify-content: center; }
+  .m-navigation--footer .m-navigation__list-item a {
+    color: #ffffff; }
+
+.m-card {
+  box-shadow: 0 5px 15px rgba(176, 176, 176, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex: 1;
+  flex-basis: calc((60rem - 100%) * 999);
+  flex-direction: column;
+  margin: 25px;
+  overflow: hidden; }
+  .m-card .m-card__text {
+    padding: 18px 20px; }
+    .m-card .m-card__text > * {
+      margin-top: 0; }
+  .m-card .m-card__link {
+    margin: auto 15px 20px; }
+
 .o-header {
+  border-bottom: 1px solid #F2F2F2;
+  padding: 1em 0; }
+
+.o-header__content {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  border-bottom: 1px solid #F2F2F2;
-  padding: 1em 0; }
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px; }
+
+.o-cards {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -25px; }
+
+.o-donate {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 940px;
+  padding: 20px; }
+
+.o-donate__text {
+  flex: 999 1 auto;
+  padding-right: 20px;
+  width: 75%; }
+  .o-donate__text p {
+    margin: 0; }
+
+.o-donate__button {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center; }
+
+.o-footer {
+  background: #424242;
+  margin-top: 50px; }
+
+.o-footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 200px 20px; }
+
+.t-full-width {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px; }
+
+.t-3-col {
+  display: flex; }
 
 .u-h1, .u-h2, .u-h3, .u-subtitle {
   margin: 0 0 1em 0; }
@@ -148,7 +261,7 @@ h2 {
   font-weight: normal; }
 
 .u-h1-blog {
-  color: #fff;
+  color: #ffffff;
   font-size: 1.667rem;
   font-weight: bold; }
 
@@ -164,3 +277,18 @@ h2 {
 
 .u-align-left {
   text-align: left; }
+
+.u-underline {
+  padding: 0 0 25px;
+  position: relative; }
+  .u-underline:after {
+    border-bottom: 5px solid #da3832;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 50px; }
+  .u-underline.u-align-center:after {
+    right: 0;
+    margin: 0 auto; }

@@ -4,7 +4,7 @@
     background: #DA3832;
     border: none;
     border-radius: 6px;
-    color: #fff;
+    color: $color-tertiary;
     cursor: pointer;
     display: inline-block;
     font-size: 1rem;
@@ -19,17 +19,27 @@
 }
 
 .m-button:focus {
-    outline-color: #575757;
+    outline-color: $color-secondary;
     outline-offset: 3px;   
 }
 
 .m-button--lg {
     border-radius: 12px;
+    padding: 16px 20px 16px 15px;
+    font-size: 1.2rem;
+}
+
+// Logo link
+.m-logo-link {
+    &:focus {
+        outline-offset: 6px;
+    }
 }
 
 // Navigation
 .m-navigation {
     align-self: center;
+    margin-left: auto;
 }
 .m-navigation__list {
     display: flex;
@@ -40,4 +50,40 @@
 }
 .m-navigation__list-item {
     padding: 2px 20px;
+}
+
+.m-navigation--footer {
+    background: #282828;
+
+    .m-navigation__list {
+        justify-content: center;
+    }
+
+    .m-navigation__list-item a {
+        color: #ffffff;
+    }
+}
+
+// Card
+.m-card {
+    box-shadow: 0 5px 15px rgba(176, 176, 176, .50);
+    border-radius: 10px;
+    display: flex;
+    flex: 1;
+    flex-basis: calc((60rem - 100%) * 999);
+    flex-direction: column;
+    margin: 25px;
+    overflow: hidden;
+
+    .m-card__text {
+        padding: 18px 20px;
+
+        > * {
+            margin-top: 0;
+        }
+    }
+
+    .m-card__link {
+        margin: auto 15px 20px;
+    }
 }

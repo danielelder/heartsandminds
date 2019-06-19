@@ -1,5 +1,13 @@
 {
     "buttonText" : "Button",
     "menuText" : "Menu Link",
-    "MenuURL" : "#"
+    "MenuURL" : "#",
+    "heading1Text" : "H1 Open Sans Bold 50px",
+    "heading2Text" : "H2 Open Sans Bold 40px",
+    "heading3Text" : "H3 Open Sans Bold 30px",
+    "linkURL" : "#",
+    "linkText" : "Read more",
+    "text" : "Body Copy Open Sans Regular 18px #575757 In her 70s, and in the early stages of dementia, Doris gets confused and angry and is particularly fixated...",
+    "imageURL" : "../../images/hero/ef_4.jpg",
+    "imageAlt" : "Example image"
 }
